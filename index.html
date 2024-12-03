@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--utf8 cho phép viết tiếng việt ko có lỗi-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uống Là Mê Cafee</title>
+  <!--link liên kết css-->
+  <link rel="stylesheet" href="style.css">
+  <!--2 link bootrap css và js để làm phù hợp với mọi giao diện-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->  
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">  
+
+<!-- Optionally, add Bootstrap JS -->  
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>  
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  function calculateTotal() {
+      var prices = document.getElementsByClassName("price");
+      var quantities = document.getElementsByClassName("quantity");
+      var total = 0;
+
+      for (var i = 0; i < prices.length; i++) {
+          total += parseInt(prices[i].innerText) * parseInt(quantities[i].value);
+      }
+
+      document.getElementById("total").innerText = total.toFixed(2) + " VND";
+  }
+  </script>
+    <script>
+      $(document).ready(function(){
+          $("button").click(function(){
+          },
+          function(){
+            alert("Xác Nhận Đặt Hàng?");
+            alert("Thành Công!!Cảm Ơn Quý Khách Đã Ủng Hộ😊");
+            });
+          });
+        </script>
+</head>
+<body>
+
+  <!-- Thanh điều hướng cố định -->
+  <nav class="navbar">
+    <div id="anhbia">
+       <img src="z6078800527196_1e902fd34aa5751cbf73696cc7aa9ba7-removebg-preview.png" width="170">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Trang Chủ</a></li>
+      <li><a href="#">Giới Thiệu</a></li>
+      <li><a href="#">Sản Phẩm</a></li>
+      <li><a href="#">Tin Tức</a></li>
+      <li><a href="#">Cửa Hàng</a></li>
+    </ul>
+    <!--phần thanh tìm kiếm-->
+    <div class="search">
+      <input type="text" placeholder="Tìm kiếm...">
+      <button>&#128269;</button>
+    </div>
+  </nav>
+
+    <!-- Nội dung chính -->
+  <div class="container">
+    <header style="text-align: left;">
+      <h1>Special Menu</h1>
+      <h2>Showing all menu</h2>
+    </header>
+    <div class="menu">
+      <div class="item">
+        <img src="https://tocotocotea.com/wp-content/uploads/2021/01/dau-tam-kem-pho-mai-300x300.png" alt="Dâu Tằm Kem Phô Mai">
+        <h3>Dâu Tằm Kem Phô Mai</h3>
+        <p>38.000đ</p>
+      </div>
+      <div class="item">
+        <img src="https://tocotocotea.com/wp-content/uploads/2024/04/Oolong-Dao-Que-Hoa-Kem-Cheese-300x300.png" alt="Ô Long Đào Quế Hoa Kem Cheese">
+<h3>Ô Long Đào Quế Hoa Kem Cheese</h3>
+        <p>38.000đ</p>
+
+      </div>
+      <div class="item">
+        <img src="https://tocotocotea.com/wp-content/uploads/2024/04/O-long-sua-kem-cafe-tran-chau-soi-300x300.png" alt="Ô Long Sữa Kem Café Trân Châu Sợi">
+        <h3>Ô Long Sữa Kem Café Trân Châu Sợi</h3>
+        <p>38.000đ</p>
+      </div>
+      <div class="item">
+        <img src="https://tocotocotea.com/wp-content/uploads/2024/04/O-long-sua-tuoi-300x300.png" alt="Ô Long Sữa Tươi">
+        <h3>Ô Long Sữa Tươi</h3>
+        <p>35.000đ</p>
+     </div>
+     <div class="item">
+      <img src="https://tocotocotea.com/wp-content/uploads/2024/04/phe-sua-kem-cheese-300x300.png" alt="Phê Sữa Kem Cheese">
+      <h3>Phê Sữa Kem Cheese</h3>
+      <p>38.000đ</p>
+    </div>
+    <div class="item">
+      <img src="https://tocotocotea.com/wp-content/uploads/2024/10/Sua-Tuoi-Nep-Cam-300x300.png" alt="Sữa Tươi Nếp Cẩm">
+      <h3>Sữa Tươi Nếp Cẩm</h3>
+      <p>38.000đ</p>
+
+    </div>
+    <div class="item">
+      <img src="https://tocotocotea.com/wp-content/uploads/2024/10/Sua-Tuoi-Yen-Mach-300x300.png" alt="Sữa Tươi Yến Mạch">
+      <h3>Sữa Tươi Yến Mạch</h3>
+      <p>39.000đ</p>
+    </div>
+    <div class="item">
+      <img src="https://tocotocotea.com/wp-content/uploads/2024/06/Xanh-Nhai-Mang-Cau-Xoai-300x300.png" alt="Xanh Xoài Mãng Cầu Xoài">
+      <h3>Xanh Xoài Mãng Cầu Xoài</h3>
+      <p>36.000đ</p>
+   </div> 
+   <div class="item">
+    <img src="https://tocotocotea.com/wp-content/uploads/2024/06/Xanh-Nhai-Mang-Cau-Xoai-300x300.png" alt="Xanh Nhài Sữa Dừa Phô Mai Tươi">
+    <h3>Xanh Nhài Sữa Dừa Phô Mai Tươi</h3>
+    <p>38.000đ</p>
+  </div>
+  <div class="item">
+    <img src="https://tocotocotea.com/wp-content/uploads/2024/06/Xanh-Nhai-Sua-Dua-Pho-Mai-Tuoi-300x300.png" alt="Xanh Xoài Sữa Tươi">
+    <h3>Xanh Xoài Sữa Tươi</h3>
+    <p>30.000đ</p>
+ </div> 
+    </div>
+  </div>
+     <div class="header"></div>
+  <script src="script.js"></script>
+  <section style="text-align: center;" class="cart">
+    <h2 style="font-weight: bold;">Cart</h2>
+    <form action="">
+      <table>
+        <thead>
+           <tr>
+            <th>Sản Phẩm</th>
+            <th>Giá Tiền</th>
+            <th>Số Lượng</th>
+            <th>Chọn</th>
+           </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img style="width: 70px;"src="https://tocotocotea.com/wp-content/uploads/2021/01/dau-tam-kem-pho-mai-300x300.png" alt="">Dâu Tằm Kem PMai</td>
+            <td><p><span class="price" >38.000</span><sup>đ</sup></p></td>
+             <td><input type="number" class="quantity" value="0" onchange="calculateTotal()"></td>
+            <td style="cursor: pointer;">Xóa</td>
+           </tr>
+           <tr>
+            <td><img style="width: 70px;" src="https://tocotocotea.com/wp-content/uploads/2024/04/Oolong-Dao-Que-Hoa-Kem-Cheese-300x300.png" alt="">Ô Long Đào Quế PM</td>
+            <td><p><span class="price">30.000</span><sup>đ</sup></p></td>
+            <td><input type="number" class="quantity" value="0" onchange="calculateTotal()"></td>
+            <td style="cursor: pointer;">Xóa</td>
+           </tr>
+           <tr>
+            <td><img style="width: 70px;"src="https://tocotocotea.com/wp-content/uploads/2024/04/O-long-sua-kem-cafe-tran-chau-soi-300x300.png" alt="">Ô Long Sữa Kem CF</td>
+<td><p><span class="price" >38.000</span><sup>đ</sup></p></td>
+             <td><input type="number" class="quantity" value="0" onchange="calculateTotal()"></td>
+            <td style="cursor: pointer;">Xóa</td>
+           </tr>
+           <tr>
+            <td><img style="width: 70px;" src="https://tocotocotea.com/wp-content/uploads/2024/04/O-long-sua-tuoi-300x300.png" alt="">Ô Long Sữa Tươi TC</td>
+            <td><p><span class="price">30.000</span><sup>đ</sup></p></td>
+            <td><input type="number" class="quantity" value="0" onchange="calculateTotal()"></td>
+            <td style="cursor: pointer;">Xóa</td>
+           </tr>
+           <tr>
+            <td><img style="width: 70px;"src="https://tocotocotea.com/wp-content/uploads/2024/04/phe-sua-kem-cheese-300x300.png" alt="">Phê Sữa Kem PMai</td>
+            <td><p><span class="price" >38.000</span><sup>đ</sup></p></td>
+             <td><input type="number" class="quantity" value="0" onchange="calculateTotal()"></td>
+            <td style="cursor: pointer;">Xóa</td>
+           </tr>
+           <tr>
+            <td><img style="width: 70px;" src="https://tocotocotea.com/wp-content/uploads/2024/10/Sua-Tuoi-Nep-Cam-300x300.png" alt="">Sữa Tươi Nếp Cẩm</td>
+            <td><p><span class="price">30.000</span><sup>đ</sup></p></td>
+            <td><input type="number" class="quantity" value="0" onchange="calculateTotal()"></td>
+            <td style="cursor: pointer;">Xóa</td>
+           </tr>
+           <tr>
+            <td><img style="width: 70px;"src="https://tocotocotea.com/wp-content/uploads/2024/10/Sua-Tuoi-Yen-Mach-300x300.png" alt="">Sữa Tươi Yến Mạch</td>
+            <td><p><span class="price" >38.000</span><sup>đ</sup></p></td>
+             <td><input type="number" class="quantity" value="0" onchange="calculateTotal()"></td>
+            <td style="cursor: pointer;">Xóa</td>
+           </tr>
+           <tr>
+            <td><img style="width: 70px;" src="https://tocotocotea.com/wp-content/uploads/2024/06/Xanh-Nhai-Mang-Cau-Xoai-300x300.png" alt="">Xanh Xoài Mãng CX</td>
+            <td><p><span class="price">30.000</span><sup>đ</sup></p></td>
+            <td><input type="number" class="quantity" value="0" onchange="calculateTotal()"></td>
+            <td style="cursor: pointer;">Xóa</td>
+           </tr>
+           <tr>
+            <td><img style="width: 70px;"src="https://tocotocotea.com/wp-content/uploads/2024/06/Xanh-Nhai-Mang-Cau-Xoai-300x300.png" alt="">Xanh Nhài Sữa PMai</td>
+            <td><p><span class="price" >38.000</span><sup>đ</sup></p></td>
+             <td><input type="number" class="quantity" value="0" onchange="calculateTotal()"></td>
+            <td style="cursor: pointer;">Xóa</td>
+           </tr>
+           <tr>
+            <td><img style="width: 70px;" src="https://tocotocotea.com/wp-content/uploads/2024/06/Xanh-Nhai-Sua-Dua-Pho-Mai-Tuoi-300x300.png" alt="">Xanh Xoài Sữa Tươi</td>
+            <td><p><span class="price">30.000</span><sup>đ</sup></p></td>
+            <td><input type="number" class="quantity" value="0" onchange="calculateTotal()"></td>
+            <td style="cursor: pointer;">Xóa</td>
+           </tr>
+        </tbody>
+      </table>
+<div style="text-align: right;" class="price-total">
+        <p style="font-weight: bold;">Tổng Tiền:<span id="total">0 VND</span></p>
+      </div>
+    </form>
+  </section>
+  <div class="xn">
+    <button type="button" class="btn btn-secondary">Xác Nhận</button>
+  </div>
+      <!--link js-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
